@@ -9,7 +9,7 @@ export const AppDataSource = new DataSource({
   port: Number(process.env.DB_PORT) || 5432,
   username: process.env.DB_USERNAME || '',
   password: process.env.DB_PASSWORD || '',
-  database: process.env.DBE_NAME || 'event_ticketing_db',
+  database: process.env.DB_NAME || 'event_ticketing_db',
   entities: [Event, Order],
   migrations: ['src/migrations/*.ts'],
   synchronize: false,
